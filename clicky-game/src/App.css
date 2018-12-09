@@ -99,3 +99,18 @@ button {
   animation: cardHover 200ms 1 linear;
   animation-fill-mode: forwards;
 }
+
+@keyframes wobble-radium-animation-79728c0b {
+  from{transform: none;}
+  15%{transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);}
+  30%{transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, -5deg);}
+  45%{transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);}
+  60%{transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);}
+  75%{transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);}
+  to{transform: none;}
+}
+
+.cards-container-animate {
+  animation: wobble-radium-animation-79728c0b 1s 1 linear;
+  animation-fill-mode: forwards;
+}

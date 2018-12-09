@@ -16,7 +16,7 @@ class App extends React.Component {
     currentScore: 0,
     highScore: 0,
     clicked: [],
-    appear: true
+    appear: true,
   };
 
   toggleAppear = () => {
