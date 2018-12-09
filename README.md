@@ -1,1 +1,2 @@
-# clicky-game
+# Star-Trek-Clicky-Game
+A Star Trek themed memory game developed with React, React Transition Group CSS Animation, and the Bulma CSS framework. Utilizes react components, component state, user events, etc.
