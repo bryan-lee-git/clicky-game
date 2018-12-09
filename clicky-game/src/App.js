@@ -11,7 +11,7 @@ const characters = images.sort(() => 0.5 - Math.random());
 
 const styles = {
   body: {
-    backgroundImage: "url('/img/background.jpg')",
+    backgroundImage: "url('./img/background.jpg')",
     fontFamily: "'Righteous', cursive",
     minHeight: "100vh",
     margin: 0,
