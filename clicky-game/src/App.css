@@ -1,10 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+
+body {
+  font-family: 'Righteous', cursive;
+  min-height: 100vh;
+  margin: 0;
+  background-image: url(/img/background.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+button {
+  font-family: 'Righteous', cursive;
+  border: none !important;
+  margin: 5px;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.navbar {
+  background-color: transparent;
+}
+
+.hero {
+  padding-top: 20px;
+  background-color: transparent !important;
 }
 
 .App-header {
@@ -18,15 +39,63 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* appear on page load */
+.fade-appear {
+  opacity: 0;
+  z-index: 1
 }
 
-@keyframes App-logo-spin {
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity 600ms linear;
+}
+
+/* enter onto page */
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-appear.fade-enter-active {
+  opacity: 1;
+  transition: opacity 600ms linear;
+}
+
+/* disappear on element exit */
+.fade-exit {
+  opacity: 0;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 1;
+  transition: opacity 600ms linear;
+}
+
+.fade-exit-done {
+  opacity: 0;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.cards-container {
+  padding: 30px;
+  border-radius: 8px;
+  /* background-color: rgba(255, 255, 255, 0.1) */
+}
+
+@keyframes cardHover {
   from {
-    transform: rotate(0deg);
+    transform: scale(1.0);
   }
   to {
-    transform: rotate(360deg);
+    transform: scale(0.95);
+    background-color: transparent;
   }
+}
+
+.card:hover {
+  animation: cardHover 200ms 1 linear;
+  animation-fill-mode: forwards;
 }
