@@ -9,6 +9,17 @@ import { CSSTransition } from "react-transition-group"
 
 const characters = images.sort(() => 0.5 - Math.random());
 
+const styles = {
+  body: {
+    backgroundImage: "url('/img/background.jpg')",
+    fontFamily: "'Righteous', cursive",
+    minHeight: "100vh",
+    margin: 0,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat"
+  }
+}
+
 class App extends React.Component {
 
   state = {
@@ -50,7 +61,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
+      <div style={styles.body} className="App">
         <Navbar currentScore={this.state.currentScore} highScore={this.state.highScore}/>
         <Hero />
         <CSSTransition in={this.state.appear} appear={true} timeout={600} classNames="fade">

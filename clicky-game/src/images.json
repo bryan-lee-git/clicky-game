@@ -1,77 +1,77 @@
 [
     {
         "name": "Weyoun",
-        "src": "/img/weyoun.jpg",
+        "src": "./img/weyoun.jpg",
         "id": 1
     },
     {
         "name": "Borg Picard",
-        "src": "/img/borg-picard.jpg",
+        "src": "./img/borg-picard.jpg",
         "id": 2
     },
     {
         "name": "Chakotay",
-        "src": "/img/chakotay.jpg",
+        "src": "./img/chakotay.jpg",
         "id": 3
     },
     {
         "name": "Borg Seven",
-        "src": "/img/borg-seven.jpg",
+        "src": "./img/borg-seven.jpg",
         "id": 4
     },
     {
         "name": "The Doctor",
-        "src": "/img/doctor.jpg",
+        "src": "./img/doctor.jpg",
         "id": 5
     },
     {
         "name": "Spock",
-        "src": "/img/spock.jpg",
+        "src": "./img/spock.jpg",
         "id": 6
     },
     {
         "name": "Geordi",
-        "src": "/img/geordi.jpg",
+        "src": "./img/geordi.jpg",
         "id": 7
     },
     {
         "name": "Data (First Contact)",
-        "src": "/img/data-fc.jpg",
+        "src": "./img/data-fc.jpg",
         "id": 8
     },
     {
         "name": "Janeway",
-        "src": "/img/janeway.jpg",
+        "src": "./img/janeway.jpg",
         "id": 9
     },
     {
         "name": "Borg Janeway",
-        "src": "/img/borg-janeway.jpg",
+        "src": "./img/borg-janeway.jpg",
         "id": 10
     },
     {
         "name": "Picard",
-        "src": "/img/picard.jpg",
+        "src": "./img/picard.jpg",
         "id": 11
     },
     {
         "name": "Borg Tuvok",
-        "src": "/img/borg-tuvok.jpg",
+        "src": "./img/borg-tuvok.jpg",
         "id": 12
     },
     {
         "name": "Data",
-        "src": "/img/data.jpg",
+        "src": "./img/data.jpg",
         "id": 13
     },
     {
         "name": "Seven of Nine",
-        "src": "/img/seven.jpg",
+        "src": "./img/seven.jpg",
         "id": 14
     },
     {
         "name": "Tuvok",
-        "src": "/img/tuvok.jpg",
+        "src": "./img/tuvok.jpg",
         "id": 15
     }
 ]

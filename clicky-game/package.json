@@ -2,7 +2,7 @@
   "name": "clicky-game",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://bryan-lee-git.github.io/clicky-game",
+  "homepage": "http://bryan-lee-git.github.io/clicky-game/",
   "dependencies": {
     "react": "^16.6.3",
     "react-dom": "^16.6.3",

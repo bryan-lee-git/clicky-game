@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Righteous');
 
-body {
-  font-family: 'Righteous', cursive;
-  min-height: 100vh;
-  margin: 0;
-  background-image: url(/img/background.jpg);
-  background-size:cover;
-  background-repeat: no-repeat;
-}
-
 button {
   font-family: 'Righteous', cursive;
   border: none !important;
