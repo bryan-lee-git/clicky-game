@@ -4,8 +4,8 @@ import Hero from "./components/Hero";
 import CardBlock from "./components/CardBlock";
 import Footer from "./components/Footer";
 import images from "./images.json"
-import './App.css';
 import { CSSTransition } from "react-transition-group"
+import './App.css';
 
 const characters = images.sort(() => 0.5 - Math.random());
 
@@ -62,10 +62,10 @@ class App extends React.Component {
   render() {
     return (
       <div style={styles.body} className="App">
-        <Navbar currentScore={this.state.currentScore} highScore={this.state.highScore}/>
+        { this.state.currentScore === 0 && this.state.highScore !== 0 ? <div className="wobble-score"><Navbar currentScore={this.state.currentScore} highScore={this.state.highScore}/></div> : <div><Navbar currentScore={this.state.currentScore} highScore={this.state.highScore}/></div> }
         <Hero />
         <CSSTransition in={this.state.appear} appear={true} timeout={600} classNames="fade">
-          <CardBlock characters={this.state.characters} imageClick={this.imageClick}/>
+          { this.state.currentScore === 0 && this.state.highScore !== 0 ? <div className="wobble"><CardBlock characters={this.state.characters} imageClick={this.imageClick}/></div> : <div><CardBlock characters={this.state.characters} imageClick={this.imageClick}/></div> }
         </CSSTransition>
         <Footer />
       </div>
